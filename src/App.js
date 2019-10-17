@@ -2,7 +2,8 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Travel from "./Travel";
+//import Travel from "./Travel";
+import Travels from "./Travels";
 
 /*function App() {
   return (
@@ -25,6 +26,8 @@ import Travel from "./Travel";
   );
 }*/
 
+//App.js is the main component of this application
+//This sub-component class called <Travels /> will be called, that is why this file imports Travels.jsx
 class App extends Component {
   render() {
     return (
@@ -34,20 +37,7 @@ class App extends Component {
           <h1 className="App-title">My Travels</h1>
         </header>
         <div>
-          <Travel
-            country="Germany"
-            destination="Berlin"
-            photo="https://images.unsplash.com/photo-1444838639505-f9042c5d2386?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-            distance="687.7 miles"
-          />
-        </div>
-        <div>
-          <Travel
-            country="Netherlands"
-            destination="Amsterdam"
-            photo="https://images.unsplash.com/photo-1549701455-d0d42354b009?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-            distance="337.6 miles"
-          />
+          <Travels />
         </div>
       </div>
     );
